@@ -1,35 +1,36 @@
 // ***************************************************
 // Shopping Cart functions
 
-var shoppingCart = (function () {
+var shoppingCart = (function() {
 
     var cart = [];
-  
-    function Item(name, price, count) {
+
+    function Item(name, price, count, description) {
         this.name = name
         this.price = price
         this.count = count
+        this.description = description
     }
-  
+
     function saveCart() {
         localStorage.setItem("shoppingCart", JSON.stringify(cart));
     }
-  
+
     function loadCart() {
         cart = JSON.parse(localStorage.getItem("shoppingCart"));
         if (cart === null) {
             cart = []
         }
     }
-  
+
     loadCart();
-  
-  
-  
-  
+
+
+
+
     var obj = {};
-  
-    obj.addItemToCart = function (name, price, count) {
+
+    obj.addItemToCart = function(name, price, count) {
         for (var i in cart) {
             if (cart[i].name === name) {
                 cart[i].count += count;
@@ -37,15 +38,15 @@ var shoppingCart = (function () {
                 return;
             }
         }
-  
-        console.log("addItemToCart:", name, price, count);
-  
-        var item = new Item(name, price, count);
+
+        console.log("addItemToCart:", name, price, count, description);
+
+        var item = new Item(name, price, count, description);
         cart.push(item);
         saveCart();
     };
-  
-    obj.setCountForItem = function (name, count) {
+
+    obj.setCountForItem = function(name, count) {
         for (var i in cart) {
             if (cart[i].name === name) {
                 cart[i].count = count;
@@ -54,9 +55,9 @@ var shoppingCart = (function () {
         }
         saveCart();
     };
-  
-  
-    obj.removeItemFromCart = function (name) { // Removes one item
+
+
+    obj.removeItemFromCart = function(name) { // Removes one item
         for (var i in cart) {
             if (cart[i].name === name) { // "3" === 3 false
                 cart[i].count--; // cart[i].count --
@@ -68,9 +69,9 @@ var shoppingCart = (function () {
         }
         saveCart();
     };
-  
-  
-    obj.removeItemFromCartAll = function (name) { // removes all item name
+
+
+    obj.removeItemFromCartAll = function(name) { // removes all item name
         for (var i in cart) {
             if (cart[i].name === name) {
                 cart.splice(i, 1);
@@ -79,32 +80,32 @@ var shoppingCart = (function () {
         }
         saveCart();
     };
-  
-  
-    obj.clearCart = function () {
+
+
+    obj.clearCart = function() {
         cart = [];
         saveCart();
     }
-  
-  
-    obj.countCart = function () { // -> return total count
+
+
+    obj.countCart = function() { // -> return total count
         var totalCount = 0;
         for (var i in cart) {
             totalCount += cart[i].count;
         }
-  
+
         return totalCount;
     };
-  
-    obj.totalCart = function () { // -> return total cost
+
+    obj.totalCart = function() { // -> return total cost
         var totalCost = 0;
         for (var i in cart) {
             totalCost += cart[i].price * cart[i].count;
         }
         return totalCost.toFixed(2);
     };
-  
-    obj.listCart = function () { // -> array of Items
+
+    obj.listCart = function() { // -> array of Items
         var cartCopy = [];
         console.log("Listing cart");
         console.log(cart);
@@ -120,12 +121,7 @@ var shoppingCart = (function () {
         }
         return cartCopy;
     };
-  
+
     // ----------------------------
     return obj;
-  })();
-  
-  
-  
-  
-  
+})();
