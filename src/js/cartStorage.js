@@ -5,11 +5,10 @@ var shoppingCart = (function() {
 
     var cart = [];
 
-    function Item(name, price, count, description) {
+    function Item(name, price, count) {
         this.name = name
         this.price = price
         this.count = count
-        this.description = description
     }
 
     function saveCart() {
@@ -39,9 +38,9 @@ var shoppingCart = (function() {
             }
         }
 
-        console.log("addItemToCart:", name, price, count, description);
+        console.log("addItemToCart:", name, price, count);
 
-        var item = new Item(name, price, count, description);
+        var item = new Item(name, price, count);
         cart.push(item);
         saveCart();
     };

@@ -14,10 +14,10 @@
     <!--Import materialize.css-->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
+
     <!-- jQeury -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -45,22 +45,27 @@
                 <div class="modal-content cart-content">
                     <!-- Single Item in cart - Cart items can be appended to the cart content class -->
                     <item>
-                        <div id="cart-container modal-content1">
+                        <div id="cart-container modal-content1" class="fw">
                             <!-- <span class="close">&times;</span> -->
-                            <button id="clear-cart">Clear Cart</button>
-                            <div>
-                                <ul id="show-cart">
-                                    <li>???????</li>
-                                </ul>
-                                <div>You have <span id="count-cart">X</span> items in your cart</div>
-                                <div>Total Cart:R<span id="total-cart"></span></div>
+                            <ul id="show-cart">
+                                <li>???????</li>
+                            </ul>
+
+                            <div class="hard-coded">
+                                <div>
+                                    <div>You have <span id="count-cart">X</span> items in your cart</div>
+                                    <div>Total Cart:R<span id="total-cart"></span></div>
+                                </div>
+                                <button id="clear-cart" class="waves-effect waves-light btn-large blue-grey">
+                                    <i class="material-icons left">clear</i>
+                                    Clear Cart
+                                </button>
                             </div>
                         </div>
                     </item>
                 </div>
                 <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat"></a><i
-                        class="material-icons close">close</i></a>
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat"></a><i class="material-icons close">close</i></a>
                 </div>
             </div>
         </div>
@@ -87,7 +92,8 @@
                     <!-- Product grouped details -->
                     <section>
                         <h6>$60</h6>
-                        <button  onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Red Paint1" data-price="5600"><i class="material-icons">shopping_cart</i></button>
+                        <button onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart" href="#clear-cart" data-name="Red Paint1" data-price="5600"><i
+                                class="material-icons">shopping_cart</i></button>
                     </section>
                 </content>
 
@@ -135,7 +141,8 @@
                     <!-- Product grouped details -->
                     <section>
                         <h6>$60</h6>
-                        <button onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Red Paint2" data-price="5600"><i class="material-icons">shopping_cart</i></button>
+                        <button onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart" href="#clear-cart" data-name="Red Paint2" data-price="5600"><i
+                                class="material-icons">shopping_cart</i></button>
                     </section>
                 </content>
 
@@ -184,7 +191,7 @@
                     <!-- Product grouped details -->
                     <section>
                         <h6>$60</h6>
-                        <button onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Red Paint3" data-price="600"><i class="material-icons">shopping_cart</i></button>
+                        <button onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart" href="#clear-cart" data-name="Red Paint3" data-price="600"><i class="material-icons">shopping_cart</i></button>
                     </section>
                 </content>
 
@@ -233,7 +240,7 @@
                     <!-- Product grouped details -->
                     <section>
                         <h6>$60</h6>
-                        <button onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Red Paint4" data-price="560"><i class="material-icons">shopping_cart</i></button>
+                        <button onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart" href="#clear-cart" data-name="Red Paint4" data-price="560"><i class="material-icons">shopping_cart</i></button>
                     </section>
                 </content>
 
@@ -281,7 +288,7 @@
                     <!-- Product grouped details -->
                     <section>
                         <h6>$60</h6>
-                        <button onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Red Paint5" data-price="100"><i class="material-icons">shopping_cart</i></button>
+                        <button onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart" href="#clear-cart" data-name="Red Paint5" data-price="100"><i class="material-icons">shopping_cart</i></button>
                     </section>
                 </content>
 
@@ -329,7 +336,8 @@
                     <!-- Product grouped details -->
                     <section>
                         <h6>$60</h6>
-                        <button onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Red Paint6" data-price="1600"><i class="material-icons">shopping_cart</i></button>
+                        <button onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart" href="#clear-cart" data-name="Red Paint6" data-price="1600"><i
+                                class="material-icons">shopping_cart</i></button>
                     </section>
                 </content>
 
@@ -378,7 +386,7 @@
                     <!-- Product grouped details -->
                     <section>
                         <h6>$60</h6>
-                        <button onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Red Paint7" data-price="120"><i class="material-icons">shopping_cart</i></button>
+                        <button onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart" href="#clear-cart" data-name="Red Paint7" data-price="120"><i class="material-icons">shopping_cart</i></button>
                     </section>
                 </content>
 
@@ -427,7 +435,8 @@
                     <!-- Product grouped details -->
                     <section>
                         <h6>$60</h6>
-                        <button onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart"  href="#clear-cart" data-name="Red Paint8" data-price="5600"><i class="material-icons">shopping_cart</i></button>
+                        <button onclick="myFunction()" id="submit" type="submit" class='myButt contact four add-to-cart follow' value="Add to cart" href="#clear-cart" data-name="Red Paint8" data-price="5600"><i
+                                class="material-icons">shopping_cart</i></button>
                     </section>
                 </content>
 
@@ -486,8 +495,7 @@
     </script>
     <!-- Cart Script  -->
     <script>
-
-        $(".add-to-cart").click(function (event) {
+        $(".add-to-cart").click(function(event) {
             event.preventDefault();
             var name = $(this).attr("data-name");
             var price = Number($(this).attr("data-price"));
@@ -496,7 +504,7 @@
             displayCart();
         });
 
-        $("#clear-cart").click(function (event) {
+        $("#clear-cart").click(function(event) {
             shoppingCart.clearCart();
             displayCart();
         });
@@ -507,20 +515,29 @@
             var output = "";
 
             for (var i in cartArray) {
-                output += "<div>"
-                    + cartArray[i].name
-                    + " <input class='item-count' type='number' data-name='"
-                    + cartArray[i].name
-                    + "' value='" + cartArray[i].count + "' >"
-                    + " x " + cartArray[i].price
-                    + " = " + cartArray[i].total
-                    + " <button class='plus-item' data-name='"
-                    + cartArray[i].name + "'>+</button>"
-                    + " <button class='subtract-item' data-name='"
-                    + cartArray[i].name + "'>-</button>"
-                    + " <button class='delete-item' data-name='"
-                    + cartArray[i].name + "'>X</button>"
-                    + "</div>";
+                output += `
+                <item>
+                    <div class="details">
+                        <h6>${cartArray[i].name}</h6> 
+                        <p>$${cartArray[i].price}</p>
+                    </div>
+                    <div class="qty-change">
+                        <!-- qty incremment -->
+                        <button class='plus-item btn-floating btn-medium waves-effect waves-light transparent' data-name='${cartArray[i].name}'>
+                            <i class="material-icons">expand_less</i>
+                        </button>
+                        <!-- Current Quantity -->
+                        <span>${cartArray[i].count}</span>
+                        <!-- qty decremment -->
+                        <button class='subtract-item btn-floating btn-medium waves-effect waves-light transparent' data-name='${cartArray[i].name}'>
+                            <i class="material-icons">expand_more</i>
+                        </button> 
+                        <button class='delete-item btn-floating btn-medium waves-effect waves-light red flat' data-name='${cartArray[i].name}'>
+                            <i class="material-icons" style="color: white">clear</i>    
+                        </button>
+                    </div>
+                </item>
+                `;
             }
 
             $("#show-cart").html(output);
@@ -528,25 +545,25 @@
             $("#total-cart").html(shoppingCart.totalCart());
         }
 
-        $("#show-cart").on("click", ".delete-item", function (event) {
+        $("#show-cart").on("click", ".delete-item", function(event) {
             var name = $(this).attr("data-name");
             shoppingCart.removeItemFromCartAll(name);
             displayCart();
         });
 
-        $("#show-cart").on("click", ".subtract-item", function (event) {
+        $("#show-cart").on("click", ".subtract-item", function(event) {
             var name = $(this).attr("data-name");
             shoppingCart.removeItemFromCart(name);
             displayCart();
         });
 
-        $("#show-cart").on("click", ".plus-item", function (event) {
+        $("#show-cart").on("click", ".plus-item", function(event) {
             var name = $(this).attr("data-name");
             shoppingCart.addItemToCart(name, 0, 1);
             displayCart();
         });
 
-        $("#show-cart").on("change", ".item-count", function (event) {
+        $("#show-cart").on("change", ".item-count", function(event) {
             var name = $(this).attr("data-name");
             var count = Number($(this).val());
             shoppingCart.setCountForItem(name, count);
@@ -562,7 +579,9 @@
         function myFunction() {
             var x = document.getElementById("snackbar");
             x.className = "show";
-            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+            setTimeout(function() {
+                x.className = x.className.replace("show", "");
+            }, 3000);
         }
     </script>
 
