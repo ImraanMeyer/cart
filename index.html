@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart Mock-Up</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./src/css/main.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar ">
+        <!-- Navabr links -->
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Catalogue</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+        <!-- Top Nav Icons -->
+        <div>
+            <a href="#cart-modal" class="modal-trigger">
+                <i class="material-icons">shopping_cart</i>
+            </a>
+
+            <!-- Modal Structure -->
+            <div id="cart-modal" class="modal">
+                <div class="modal-title">
+                    <h5>Your Cart</h5>
+                </div>
+                <div class="modal-content cart-content">
+                    <!-- Single Item in cart - Cart items can be appended to the cart content class -->
+                    <item>
+                        <img src="./src/images/fashion.jpg" />
+                        <div class="details">
+                            <h6>Shoes</h6>
+                            <p>A bunch of text</p>
+                            <p>$60</p>
+                        </div>
+                        <div class="qty-change">
+                            <!-- qty incremment -->
+                            <span>+</span>
+                            <!-- Current Quantity -->
+                            <span>4</span>
+                            <!-- qty decremment -->
+                            <span>-</span>
+                        </div>
+                    </item>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat"></a><i class="material-icons">close</i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- All products  -->
+        <div class="row container">
+
+            <!-- Single Product -->
+            <product-wrapper class="col s3">
+                <!-- Product Img -->
+                <img-wrapper>
+
+                    <a href="#modal1" class="modal-trigger">
+                        <img class="product-image" src="https://picsum.photos/300/200?random=1" />
+                    </a>
+                </img-wrapper>
+
+                <!-- Product Content -->
+                <content>
+                    <h5>Red Paint</h5>
+
+                    <!-- Product grouped details -->
+                    <section>
+                        <h6>$60</h6>
+                        <button><i class="material-icons">shopping_cart</i></button>
+                    </section>
+                </content>
+
+                <!-- *** Modal Structure ***  -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content modal-product-view">
+                        <!-- Modal Product Content -->
+                        <h4>Red Paint</h4>
+                        <img class="product-image" src="https://picsum.photos/300/200?random=1" />
+
+                        <div class="modal-product-details">
+                            <p>$50</p>
+                            <p>A bunch of text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, minus.</p>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-circle waves-grey btn-flat">
+                            <i class="material-icons">shopping_cart</i>
+                        </a>
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </div>
+                </div>
+                <!-- *** Modal Ends *** -->
+            </product-wrapper>
+            <!-- Product end -->
+
+            <!-- Single Product -->
+            <product-wrapper class="col s3">
+                <!-- Product Img -->
+                <img-wrapper>
+
+                    <a href="#modal1" class="modal-trigger">
+                        <img class="product-image" src="https://picsum.photos/300/200?random=2" />
+                    </a>
+                </img-wrapper>
+
+                <!-- Product Content -->
+                <content>
+                    <h5>Red Paint</h5>
+
+                    <!-- Product grouped details -->
+                    <section>
+                        <h6>$60</h6>
+                        <button><i class="material-icons">shopping_cart</i></button>
+                    </section>
+                </content>
+
+                <!-- *** Modal Structure ***  -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content modal-product-view">
+                        <!-- Modal Product Content -->
+                        <h4>Red Paint</h4>
+                        <img class="product-image" src="https://picsum.photos/300/200?random=2" />
+
+                        <div class="modal-product-details">
+                            <p>$50</p>
+                            <p>A bunch of text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, minus.</p>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-circle waves-grey btn-flat">
+                            <i class="material-icons">shopping_cart</i>
+                        </a>
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </div>
+                </div>
+                <!-- *** Modal Ends *** -->
+            </product-wrapper>
+            <!-- Product end -->
+
+
+            <!-- Single Product -->
+            <product-wrapper class="col s3">
+                <!-- Product Img -->
+                <img-wrapper>
+
+                    <a href="#modal1" class="modal-trigger">
+                        <img class="product-image" src="https://picsum.photos/300/200?random=3" />
+                    </a>
+                </img-wrapper>
+
+                <!-- Product Content -->
+                <content>
+                    <h5>Red Paint</h5>
+
+                    <!-- Product grouped details -->
+                    <section>
+                        <h6>$60</h6>
+                        <button><i class="material-icons">shopping_cart</i></button>
+                    </section>
+                </content>
+
+                <!-- *** Modal Structure ***  -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content modal-product-view">
+                        <!-- Modal Product Content -->
+                        <h4>Red Paint</h4>
+                        <img class="product-image" src="https://picsum.photos/300/200?random=3" />
+
+                        <div class="modal-product-details">
+                            <p>$50</p>
+                            <p>A bunch of text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, minus.</p>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-circle waves-grey btn-flat">
+                            <i class="material-icons">shopping_cart</i>
+                        </a>
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </div>
+                </div>
+                <!-- *** Modal Ends *** -->
+            </product-wrapper>
+            <!-- Product end -->
+
+
+            <!-- Single Product -->
+            <product-wrapper class="col s3">
+                <!-- Product Img -->
+                <img-wrapper>
+
+                    <a href="#modal1" class="modal-trigger">
+                        <img class="product-image" src="https://picsum.photos/300/200?random=4" />
+                    </a>
+                </img-wrapper>
+
+                <!-- Product Content -->
+                <content>
+                    <h5>Red Paint</h5>
+
+                    <!-- Product grouped details -->
+                    <section>
+                        <h6>$60</h6>
+                        <button><i class="material-icons">shopping_cart</i></button>
+                    </section>
+                </content>
+
+                <!-- *** Modal Structure ***  -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content modal-product-view">
+                        <!-- Modal Product Content -->
+                        <h4>Red Paint</h4>
+                        <img class="product-image" src="https://picsum.photos/300/200?random=4" />
+
+                        <div class="modal-product-details">
+                            <p>$50</p>
+                            <p>A bunch of text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, minus.</p>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-circle waves-grey btn-flat">
+                            <i class="material-icons">shopping_cart</i>
+                        </a>
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </div>
+                </div>
+                <!-- *** Modal Ends *** -->
+            </product-wrapper>
+            <!-- Product end -->
+
+            <!-- Single Product -->
+            <product-wrapper class="col s3">
+                <!-- Product Img -->
+                <img-wrapper>
+
+                    <a href="#modal1" class="modal-trigger">
+                        <img class="product-image" src="https://picsum.photos/300/200?random=5" />
+                    </a>
+                </img-wrapper>
+
+                <!-- Product Content -->
+                <content>
+                    <h5>Red Paint</h5>
+
+                    <!-- Product grouped details -->
+                    <section>
+                        <h6>$60</h6>
+                        <button><i class="material-icons">shopping_cart</i></button>
+                    </section>
+                </content>
+
+                <!-- *** Modal Structure ***  -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content modal-product-view">
+                        <!-- Modal Product Content -->
+                        <h4>Red Paint</h4>
+                        <img class="product-image" src="https://picsum.photos/300/200?random=5" />
+
+                        <div class="modal-product-details">
+                            <p>$50</p>
+                            <p>A bunch of text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, minus.</p>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-circle waves-grey btn-flat">
+                            <i class="material-icons">shopping_cart</i>
+                        </a>
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </div>
+                </div>
+                <!-- *** Modal Ends *** -->
+            </product-wrapper>
+            <!-- Product end -->
+
+            <!-- Single Product -->
+            <product-wrapper class="col s3">
+                <!-- Product Img -->
+                <img-wrapper>
+
+                    <a href="#modal1" class="modal-trigger">
+                        <img class="product-image" src="https://picsum.photos/300/200?random=6" />
+                    </a>
+                </img-wrapper>
+
+                <!-- Product Content -->
+                <content>
+                    <h5>Red Paint</h5>
+
+                    <!-- Product grouped details -->
+                    <section>
+                        <h6>$60</h6>
+                        <button><i class="material-icons">shopping_cart</i></button>
+                    </section>
+                </content>
+
+                <!-- *** Modal Structure ***  -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content modal-product-view">
+                        <!-- Modal Product Content -->
+                        <h4>Red Paint</h4>
+                        <img class="product-image" src="https://picsum.photos/300/200?random=6" />
+
+                        <div class="modal-product-details">
+                            <p>$50</p>
+                            <p>A bunch of text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, minus.</p>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-circle waves-grey btn-flat">
+                            <i class="material-icons">shopping_cart</i>
+                        </a>
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </div>
+                </div>
+                <!-- *** Modal Ends *** -->
+            </product-wrapper>
+            <!-- Product end -->
+
+
+            <!-- Single Product -->
+            <product-wrapper class="col s3">
+                <!-- Product Img -->
+                <img-wrapper>
+
+                    <a href="#modal1" class="modal-trigger">
+                        <img class="product-image" src="https://picsum.photos/300/200?random=7" />
+                    </a>
+                </img-wrapper>
+
+                <!-- Product Content -->
+                <content>
+                    <h5>Red Paint</h5>
+
+                    <!-- Product grouped details -->
+                    <section>
+                        <h6>$60</h6>
+                        <button><i class="material-icons">shopping_cart</i></button>
+                    </section>
+                </content>
+
+                <!-- *** Modal Structure ***  -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content modal-product-view">
+                        <!-- Modal Product Content -->
+                        <h4>Red Paint</h4>
+                        <img class="product-image" src="https://picsum.photos/300/200?random=7" />
+
+                        <div class="modal-product-details">
+                            <p>$50</p>
+                            <p>A bunch of text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, minus.</p>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-circle waves-grey btn-flat">
+                            <i class="material-icons">shopping_cart</i>
+                        </a>
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </div>
+                </div>
+                <!-- *** Modal Ends *** -->
+            </product-wrapper>
+            <!-- Product end -->
+
+
+            <!-- Single Product -->
+            <product-wrapper class="col s3">
+                <!-- Product Img -->
+                <img-wrapper>
+
+                    <a href="#modal1" class="modal-trigger">
+                        <img class="product-image" src="https://picsum.photos/300/200?random=8" />
+                    </a>
+                </img-wrapper>
+
+                <!-- Product Content -->
+                <content>
+                    <h5>Red Paint</h5>
+
+                    <!-- Product grouped details -->
+                    <section>
+                        <h6>$60</h6>
+                        <button><i class="material-icons">shopping_cart</i></button>
+                    </section>
+                </content>
+
+                <!-- *** Modal Structure ***  -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content modal-product-view">
+                        <!-- Modal Product Content -->
+                        <h4>Red Paint</h4>
+                        <img class="product-image" src="https://picsum.photos/300/200?random=8" />
+
+                        <div class="modal-product-details">
+                            <p>$50</p>
+                            <p>A bunch of text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, minus.</p>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-circle waves-grey btn-flat">
+                            <i class="material-icons">shopping_cart</i>
+                        </a>
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </div>
+                </div>
+                <!-- *** Modal Ends *** -->
+            </product-wrapper>
+            <!-- Product end -->
+
+        </div>
+    </main>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Load dynamic data -->
+    <!-- <script src="./src/js/main.js"></script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modalClass = document.querySelectorAll('.modal');
+            const newModal = M.Modal.init(modalClass);
+        });
+    </script>
+
+</body>
+
+</html>
