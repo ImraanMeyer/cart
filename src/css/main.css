@@ -69,6 +69,17 @@ product-wrapper {
     align-items: center;
     width: 80%;
     margin: 0 auto; }
+    #cart-modal .cart-content item #clear-cart > button {
+      display: flex;
+      align-items: center; }
+    #cart-modal .cart-content item .fw {
+      width: 100% !important; }
+      #cart-modal .cart-content item .fw .hard-coded {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; }
     #cart-modal .cart-content item img {
       height: 200px;
       object-fit: cover;
@@ -77,6 +88,14 @@ product-wrapper {
       display: flex;
       justify-content: space-around;
       width: 10vw; }
+      #cart-modal .cart-content item .qty-change > button {
+        display: flex;
+        align-items: center;
+        position: relative; }
+        #cart-modal .cart-content item .qty-change > button i.material-icons {
+          line-height: normal;
+          height: auto;
+          color: #3c3c3c; }
   #cart-modal .cart-content::after {
     content: '';
     display: block;
@@ -84,50 +103,6 @@ product-wrapper {
     background: #3c3c3c;
     height: 2px;
     margin: 3em auto 0; }
-
-
-    
-#snackbar {
-  visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
-  background-color: rgb(235, 2, 118);
-  color: #fff;
-  text-align: center;
-  border-radius: 2px;
-  padding: 16px;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  bottom: 30px;
-  font-size: 17px;
-}
-
-#snackbar.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-@-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;} 
-  to {bottom: 30px; opacity: 1;}
-}
-
-@keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
-}
-
-@-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;} 
-  to {bottom: 0; opacity: 0;}
-}
-
-@keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
-}
 
 .modal-product-view {
   display: flex;
@@ -147,6 +122,53 @@ product-wrapper {
     .modal-product-view .modal-product-details p:nth-of-type(1) {
       margin-bottom: 2em; }
 
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #eb0276;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px; }
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s; }
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1; }
+  to {
+    bottom: 0;
+    opacity: 0; } }
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1; }
+  to {
+    bottom: 0;
+    opacity: 0; } }
 @media only screen and (min-device-width: 120px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
   .container {
     display: flex;

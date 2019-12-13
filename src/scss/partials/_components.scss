@@ -54,6 +54,20 @@ product-wrapper {
     .cart-content {
         position: relative;
         item {
+            #clear-cart>button {
+                display: flex;
+                align-items: center;
+            }
+            .fw {
+                width: 100% !important;
+                .hard-coded {
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -68,6 +82,16 @@ product-wrapper {
                 display: flex;
                 justify-content: space-around;
                 width: 10vw;
+                &>button {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    i.material-icons {
+                        line-height: normal;
+                        height: auto;
+                        color: $black;
+                    }
+                }
             }
         }
         &::after {
@@ -101,5 +125,72 @@ product-wrapper {
         p:nth-of-type(1) {
             margin-bottom: 2em;
         }
+    }
+}
+
+// Snackbar
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: rgb(235, 2, 118);
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+    &.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+}
+
+// Snackbar Animations
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
     }
 }
